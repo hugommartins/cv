@@ -1,0 +1,109 @@
+/* Zen White Theme for Hugo Martins CV Structure
+Focus: Minimalism, High-Legibility, and Light Tones
+*/
+:root {
+--bg-color: #ffffff;
+--secondary-bg: #fcfcfc;
+--text-main: #18181b;
+--text-muted: #71717a;
+--accent-border: #e4e4e7;
+--tag-bg: #f4f4f5;
+--max-width: 800px;
+}
+body {
+background-color: var(--bg-color);
+color: var(--text-main);
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: var(--max-width);
+margin: 0 auto;
+padding: 4rem 2rem;
+}
+/* Header & Profile Styling from index.md */
+header {
+margin-bottom: 4rem;
+}
+h1 {
+font-size: 2.5rem;
+font-weight: 800;
+letter-spacing: -0.05em;
+margin-bottom: 0.5rem;
+}
+header p {
+color: var(--text-muted);
+font-size: 1.1rem;
+margin-top: 0;
+}
+/* Section Transitions */
+section {
+margin-bottom: 3.5rem;
+}
+h2 {
+font-size: 0.75rem;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+color: var(--text-muted);
+border-bottom: 1px solid var(--accent-border);
+padding-bottom: 0.5rem;
+margin-bottom: 2rem;
+}
+/* Experience & Education Lists */
+ul {
+list-style: none;
+padding: 0;
+}
+li {
+margin-bottom: 2rem;
+position: relative;
+}
+/* Timeline feel for list items */
+li h3 {
+font-size: 1.1rem;
+margin: 0;
+font-weight: 600;
+}
+.date {
+font-size: 0.85rem;
+color: var(--text-muted);
+float: right;
+}
+.company {
+display: block;
+font-size: 0.95rem;
+color: var(--text-muted);
+margin-bottom: 0.5rem;
+}
+/* Description text inside Markdown lists */
+.description {
+font-size: 0.95rem;
+color: #3f3f46;
+}
+/* Skills/Tags */
+.skills-container {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+.skill-tag {
+background: var(--tag-bg);
+padding: 0.2rem 0.7rem;
+border-radius: 4px;
+font-size: 0.8rem;
+color: var(--text-muted);
+border: 1px solid var(--accent-border);
+}
+@media (max-width: 600px) {
+.date {
+float: none;
+display: block;
+margin-bottom: 0.25rem;
+}
+}
+@media print {
+.container { padding: 2rem; }
+body { background: white; }
+}
