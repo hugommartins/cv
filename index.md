@@ -49,7 +49,6 @@ Bachelor Degree in Clinical Physiology
 
 
 ## Certifications
-
 `2021`
 ISTQB Certified Tester, Foundation Level | 21-CTFL-00393-USA
 
