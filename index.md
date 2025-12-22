@@ -55,6 +55,6 @@ ISTQB Certified Tester, Foundation Level | 21-CTFL-00393-USA
 
 
 
-###### Footer
+#### Footer
 Last updated: Dec 2025
 
