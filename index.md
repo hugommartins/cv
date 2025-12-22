@@ -40,7 +40,6 @@ __QuickOps__
 ### Specialized in
 
 
-
 ## Education
 
 `2016-2020`
