@@ -1,11 +1,10 @@
 /* Zen White Update based on Hugo Martins' Original CSS
-Maintains the 33% / 65% split layout logic.
+   Maintains the 33% / 65% split layout logic.
 */
-​/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-​html, body, div, span, applet, object, iframe,
+
+/* --- CSS RESET (MeyerWeb v2.0) --- */
+
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -18,164 +17,189 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-display: block;
+  display: block;
 }
+
 body {
-line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-content: '';
-content: none;
+  content: '';
+  content: none;
 }
+
 table {
-border-collapse: collapse;
-border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-​/* --- ZEN WHITE UPDATES START HERE --- */
-​body {
-font: normal normal 400;
-font-size: 90%; /* Increased for modern readability /
-line-height: 1.6em;
-font-family: 'Inter', -apple-system, sans-serif; / Modern stack /
-background-color: #ffffff;
-color: #27272a; / Deep charcoal instead of pure black */
-margin-top: 5em;
-margin-left: 2em;
-padding-bottom: 5em;
+
+/* --- ZEN WHITE UPDATES START HERE --- */
+
+body {
+  font: normal normal 400;
+  font-size: 90%; /* Increased for modern readability */
+  line-height: 1.6em;
+  font-family: 'Inter', -apple-system, sans-serif; /* Modern stack */
+  background-color: #ffffff;
+  color: #27272a; /* Deep charcoal instead of pure black */
+  margin-top: 5em;
+  margin-left: 2em;
+  padding-bottom: 5em;
 }
-​p {
-position: relative;
-left: 33%;
-margin-bottom: 0.8em;
-margin-right: 0;
-width: 55%; /* Slightly narrower for better line length /
-color: #52525b; / Muted text for paragraphs */
+
+p {
+  position: relative;
+  left: 33%;
+  margin-bottom: 0.8em;
+  margin-right: 0;
+  width: 55%; /* Slightly narrower for better line length */
+  color: #52525b; /* Muted text for paragraphs */
 }
-​code {
-font: normal normal;
-font-size: 75%;
-font-family: 'JetBrains Mono', 'Menlo', monospace;
-color: #a1a1aa; /* Light gray for non-intrusive metadata */
+
+code {
+  font: normal normal;
+  font-size: 75%;
+  font-family: 'JetBrains Mono', 'Menlo', monospace;
+  color: #a1a1aa; /* Light gray for non-intrusive metadata */
 }
-​p code {
-position: absolute;
-left: -18%;
+
+p code {
+  position: absolute;
+  left: -18%;
 }
-​ul {
-position: relative;
-left: 33%;
-width: 55%;
-margin-bottom: 2em;
-margin-top: -0.5em;
+
+ul {
+  position: relative;
+  left: 33%;
+  width: 55%;
+  margin-bottom: 2em;
+  margin-top: -0.5em;
 }
-​li {
-padding-left: 1.25em;
-text-indent: -1.25em;
-margin-bottom: 0.5em;
-color: #52525b;
+
+li {
+  padding-left: 1.25em;
+  text-indent: -1.25em;
+  margin-bottom: 0.5em;
+  color: #52525b;
 }
-​li ul {
-position: relative;
-left: 0;
-width: 100%;
-margin-top: 0.25em;
+
+li ul {
+  position: relative;
+  left: 0;
+  width: 100%;
+  margin-top: 0.25em;
 }
-​h1, h2, h3, h4 {
-font-weight: 700; /* Bolder headers for Zen contrast */
-font-family: 'Inter', sans-serif;
-width: 65%;
-color: #09090b;
+
+h1, h2, h3, h4 {
+  font-weight: 700; /* Bolder headers for Zen contrast */
+  font-family: 'Inter', sans-serif;
+  width: 65%;
+  color: #09090b;
 }
-​h1 {
-text-align: left;
-font-size: 3.5em;
-line-height: 1.1em;
-position: relative;
-left: 33%;
-letter-spacing: -0.05em;
-margin-bottom: 0.2em;
+
+h1 {
+  text-align: left;
+  font-size: 3.5em;
+  line-height: 1.1em;
+  position: relative;
+  left: 33%;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.2em;
 }
-​h1 + p {
-/* subtitle/job title */
-font-style: normal;
-font-size: 1.2em;
-font-weight: 500;
-color: #71717a;
-margin-bottom: 4em;
+
+h1 + p {
+  /* subtitle/job title */
+  font-style: normal;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #71717a;
+  margin-bottom: 4em;
 }
-​h2 {
-font-size: 0.85em;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-color: #a1a1aa; /* Soft gray for category names */
-margin-top: 4em;
-position: relative;
-top: 1.4em;
-text-align: right;
-width: 25%;
+
+h2 {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a1a1aa; /* Soft gray for category names */
+  margin-top: 4em;
+  position: relative;
+  top: 1.4em;
+  text-align: right;
+  width: 25%;
 }
-​h3 {
-font-size: 0.95em;
-font-weight: 600;
-line-height: 2em;
-position: relative;
-top: 1.7em;
-text-align: right;
-width: 25%;
-color: #18181b;
+
+h3 {
+  font-size: 0.95em;
+  font-weight: 600;
+  line-height: 2em;
+  position: relative;
+  top: 1.7em;
+  text-align: right;
+  width: 25%;
+  color: #18181b;
 }
-​a {
-color: inherit;
-text-decoration: none;
-border-bottom: 1px solid #e4e4e7;
-transition: all 0.2s ease;
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #e4e4e7;
+  transition: all 0.2s ease;
 }
-​a:hover {
-color: #000;
-border-bottom-color: #000;
+
+a:hover {
+  color: #000;
+  border-bottom-color: #000;
 }
-​#webaddress {
-margin-top: 1em;
-position: relative;
-left: 33%;
-color: #d4d4d8;
-font-family: monospace;
-font-size: 80%;
+
+#webaddress {
+  margin-top: 1em;
+  position: relative;
+  left: 33%;
+  color: #d4d4d8;
+  font-family: monospace;
+  font-size: 80%;
 }
-​em {
-font-weight: 600;
-font-style: normal; /* "Zen" often avoids italics for a cleaner look */
-color: #18181b;
+
+em {
+  font-weight: 600;
+  font-style: normal; /* "Zen" often avoids italics for a cleaner look */
+  color: #18181b;
 }
-​strong {
-font-weight: 700;
-color: #000;
+
+strong {
+  font-weight: 700;
+  color: #000;
 }
-​/* Specific styling for the skills section to keep it clean */
+
+/* Specific styling for the skills section to keep it clean */
 #skills + ul li {
-display: inline-block;
-background: #fafafa;
-border: 1px solid #f4f4f5;
-padding: 0.2em 0.6em;
-text-indent: 0;
-margin-right: 0.5em;
-border-radius: 4px;
-font-size: 0.9em;
+  display: inline-block;
+  background: #fafafa;
+  border: 1px solid #f4f4f5;
+  padding: 0.2em 0.6em;
+  text-indent: 0;
+  margin-right: 0.5em;
+  border-radius: 4px;
+  font-size: 0.9em;
 }
