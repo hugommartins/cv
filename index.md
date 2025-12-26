@@ -1,7 +1,3 @@
----
-layout: cv
-title: Hugo Martins
----
 <div class="cv-wrapper">
 
 <section class="left-col">
