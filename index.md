@@ -2,10 +2,9 @@
 layout: cv
 title: Hugo Martins
 ---
+<div class="cv-wrapper">
 
-<div class="container">
-
-<div class="sidebar">
+<section class="left-col">
 
 your.email@example.com  
 +00 123 456 789  
@@ -30,11 +29,11 @@ City Name, State
 
 * English •••••••••
 * French ••••••
-* Spanish •••••••
+* Spanish ••••••••
 
-</div>
+</section>
 
-<div class="main-content">
+<section class="right-col">
 
 # Patricia Smith
 
@@ -47,6 +46,6 @@ City Name, State
 
 **2018 – 2019 / Company Name / City Name** **Position or Title** Ritas eos asit eosande invellam et la volupis molupta nonet excesit doluptatur aut et aut everfer nuntionet dolumet eaque.
 
-</div>
+</section>
 
 </div>
