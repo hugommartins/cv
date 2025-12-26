@@ -2,59 +2,41 @@
 layout: cv
 title: Hugo Martins
 ---
+
+<div class="sidebar">
+
+your.email@example.com  
++00 123 456 789  
+123 Street Name  
+City, State
+
+<p class="accent">Get in touch.</p>
+
+## Education
+**2008 - 2010** **Name of Degree** Institution, City Name
+
+## Expertise
+* Skill One
+* Skill Two
+* Skill Three
+
+## Languages
+* English •••••••••
+* French ••••••
+</div>
+
+<div class="main-content">
+
 # Hugo Martins
 Software Develoment Engineer in Test | ISTQB Certified
 
-<div id="webaddress">
-<a href="hugommartins.github.io">hugommartins.github.io</a>
-| <a href="mailto:hugomoreirmartins1@gmail.com">Email</a>
-| +351 926 718 249
-| <a href="https://www.linkedin.com/in/hugomartinsqa/">Linkedin</a>
+<p class="date">2019 - present / Company Name / City</p>
+**Position or Title** Repratu sidandam faccaborio. Estis glaborita con es necum accullam esciasi deliquam, vendignam cupta con peles sapierum et quia num dolorerum quae.
+
+* Bullet point about achievement
+* Another bullet point here
+
+<p class="date">2016 - 2018 / Company Name / City</p>
+**Position or Title** Tias eaque et auda qui ipitatus et lam inis modi debissitium fugiam et officia tempor sinvel ea con poreferi tem volorum.
+
 </div>
-
-
-## Work Experience
-
-`Jan. 2022 - Now`
-__Fabric (former GYANT)__
-- _SDET_
-- Currently working at a healthcare business company, on multiple projects. 
-- Key qualifications and responsibilities:
-- Testing implementations of existing features and new features being developed;
-- Bug reports;
-- Creating and maintaining documentation on QA guides; 
-- Helped with the creation of the QA process;
-- Using tools like mitmproxy and Chrome Override to test the application;
-- Collaborating with the automation team to learn and work with them.
-
-`May 2021 - Dec 2021`
-__QuickOps__
-- _Mobile QA Analyst_
-- Consultant at a mobile team at Jumia. Responsible for the quality assurance of three applications.
-- Key qualifications and responsibilities:
-- Testing the new features;
-- Bug reports;
-- Manual regression testing (wrote the test cases and maintained them);
-- Usage of proxy apps to test the applications.
-
-### Specialized in
-
-
-## Education
-
-`2016-2020`
-
-__Escola Superior de Saúde__
-Bachelor Degree in Clinical Physiology
-
-
-## Certifications
-`2021`
-ISTQB Certified Tester, Foundation Level | 21-CTFL-00393-USA
-
-
-
-
-#### Footer
-Last updated: Dec 2025
-
