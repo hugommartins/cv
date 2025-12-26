@@ -56,96 +56,80 @@ table {
 
 /* --- ZEN WHITE UPDATES START HERE --- */
 
+/* Keep your Reset at the top as you had it */
+
 body {
-    font-family: 'Georgia', serif; /* Serif font for headers to match image */
-    color: #333;
-    line-height: 1.5;
-    background-color: #fff;
+    background-color: #fdfdfd;
+    font-family: 'Verdana', sans-serif;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* The Wrapper */
+.container {
+    display: flex;
+    width: 100%;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 30% 1fr; /* 30% Sidebar, 70% Content */
-    gap: 40px;
+    gap: 60px; /* Space between columns */
 }
 
-/* --- Layout Structure --- */
-
-/* Sidebar (Left Column) */
+/* Sidebar Styling (30% width) */
 .sidebar {
-    grid-column: 1;
+    flex: 0 0 30%;
+    font-size: 0.85rem;
+    color: #444;
 }
 
-/* Main Content (Right Column) */
+/* Main Content Styling (70% width) */
 .main-content {
-    grid-column: 2;
+    flex: 1;
 }
 
-/* --- Typography --- */
-
+/* Typography to match image */
 h1 {
-    font-size: 3.5rem;
-    font-weight: 900;
-    line-height: 0.9;
-    margin-bottom: 40px;
-    text-transform: none;
     font-family: 'Times New Roman', serif;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0.85;
+    margin-bottom: 50px;
+    color: #000;
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem;
     font-weight: bold;
-    text-transform: none;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    border-bottom: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #000;
 }
 
-h3 {
-    font-size: 1rem;
+/* The Tan "Get in touch" color */
+.accent {
+    color: #c4a47c;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
 }
 
 p, li {
-    font-family: 'Verdana', sans-serif; /* Sans-serif for body to match image */
-    font-size: 0.85rem;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-/* Special Color for Contact Header */
-.accent {
-    color: #c4a47c; /* Tan/Gold color from image */
-    font-weight: bold;
+    line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* --- Specific List Styles --- */
-
+/* Clean up lists */
 ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
-/* Styling for the Experience section dates */
-.date {
-    font-style: italic;
-    font-size: 0.8rem;
-    color: #888;
-    margin-bottom: 2px;
+li {
+    margin-bottom: 5px;
 }
 
-/* Skill dots simulation */
-.skills li {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* --- Utility for MD --- */
-hr {
-    border: 0;
-    height: 1px;
-    background: #eee;
-    margin: 20px 0;
+/* Sidebar specific spacing */
+.sidebar p {
+    margin-bottom: 5px;
 }
