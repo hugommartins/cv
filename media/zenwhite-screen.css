@@ -1,135 +1,78 @@
-/* Zen White Update based on Hugo Martins' Original CSS
-   Maintains the 33% / 65% split layout logic.
-*/
-
-/* --- CSS RESET (MeyerWeb v2.0) --- */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+/* --- Reset & Base --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* --- ZEN WHITE UPDATES START HERE --- */
-
-/* Keep your Reset at the top as you had it */
-
-body {
-    background-color: #fdfdfd;
+    background-color: #fff;
+    color: #333;
     font-family: 'Verdana', sans-serif;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
+    line-height: 1.5;
+    padding: 40px;
 }
 
-/* The Wrapper */
-.container {
+/* --- Layout Structure --- */
+.cv-wrapper {
     display: flex;
-    width: 100%;
     max-width: 900px;
-    gap: 60px; /* Space between columns */
+    margin: 0 auto;
+    gap: 50px; /* Space between columns */
 }
 
-/* Sidebar Styling (30% width) */
-.sidebar {
-    flex: 0 0 30%;
+.left-col {
+    flex: 0 0 250px; /* Fixed width sidebar */
     font-size: 0.85rem;
-    color: #444;
 }
 
-/* Main Content Styling (70% width) */
-.main-content {
-    flex: 1;
+.right-col {
+    flex: 1; /* Takes up remaining space */
 }
 
-/* Typography to match image */
+/* --- Typography --- */
 h1 {
     font-family: 'Times New Roman', serif;
     font-size: 4rem;
     font-weight: 900;
-    line-height: 0.85;
-    margin-bottom: 50px;
-    color: #000;
+    line-height: 0.9;
+    margin-bottom: 40px;
 }
 
 h2 {
     font-family: 'Times New Roman', serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #000;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
 }
 
-/* The Tan "Get in touch" color */
+h3 {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* The Tan Color for "Get in touch" */
 .accent {
     color: #c4a47c;
     font-weight: bold;
-    margin-top: 20px;
     font-family: 'Times New Roman', serif;
     font-size: 1.2rem;
-}
-
-p, li {
-    line-height: 1.6;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
-/* Clean up lists */
+/* List & Paragraph Spacing */
+p, li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
 ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Matches the clean look of the image */
+    padding-left: 0;
 }
 
-li {
-    margin-bottom: 5px;
+strong {
+    color: #000;
 }
 
-/* Sidebar specific spacing */
-.sidebar p {
-    margin-bottom: 5px;
-}
+/* Ensure images/icons don't break layout */
+img { max-width: 100%; }
