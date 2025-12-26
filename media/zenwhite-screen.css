@@ -57,149 +57,95 @@ table {
 /* --- ZEN WHITE UPDATES START HERE --- */
 
 body {
-  font: normal normal 400;
-  font-size: 90%; /* Increased for modern readability */
-  line-height: 1.6em;
-  font-family: 'Inter', -apple-system, sans-serif; /* Modern stack */
-  background-color: #ffffff;
-  color: #27272a; /* Deep charcoal instead of pure black */
-  margin-top: 5em;
-  margin-left: 2em;
-  padding-bottom: 5em;
+    font-family: 'Georgia', serif; /* Serif font for headers to match image */
+    color: #333;
+    line-height: 1.5;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 1fr; /* 30% Sidebar, 70% Content */
+    gap: 40px;
 }
 
-p {
-  position: relative;
-  left: 33%;
-  margin-bottom: 0.8em;
-  margin-right: 0;
-  width: 55%; /* Slightly narrower for better line length */
-  color: #52525b; /* Muted text for paragraphs */
+/* --- Layout Structure --- */
+
+/* Sidebar (Left Column) */
+.sidebar {
+    grid-column: 1;
 }
 
-code {
-  font: normal normal;
-  font-size: 75%;
-  font-family: 'JetBrains Mono', 'Menlo', monospace;
-  color: #a1a1aa; /* Light gray for non-intrusive metadata */
+/* Main Content (Right Column) */
+.main-content {
+    grid-column: 2;
 }
 
-p code {
-  position: absolute;
-  left: -18%;
-}
-
-ul {
-  position: relative;
-  left: 33%;
-  width: 55%;
-  margin-bottom: 2em;
-  margin-top: -0.5em;
-}
-
-li {
-  padding-left: 1.25em;
-  text-indent: -1.25em;
-  margin-bottom: 0.5em;
-  color: #52525b;
-}
-
-li ul {
-  position: relative;
-  left: 0;
-  width: 100%;
-  margin-top: 0.25em;
-}
-
-h1, h2, h3, h4 {
-  font-weight: 700; /* Bolder headers for Zen contrast */
-  font-family: 'Inter', sans-serif;
-  width: 65%;
-  color: #09090b;
-}
+/* --- Typography --- */
 
 h1 {
-  text-align: left;
-  font-size: 3.5em;
-  line-height: 1.1em;
-  position: relative;
-  left: 33%;
-  letter-spacing: -0.05em;
-  margin-bottom: 0.2em;
-}
-
-h1 + p {
-  /* subtitle/job title */
-  font-style: normal;
-  font-size: 1.2em;
-  font-weight: 500;
-  color: #71717a;
-  margin-bottom: 4em;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 0.9;
+    margin-bottom: 40px;
+    text-transform: none;
+    font-family: 'Times New Roman', serif;
 }
 
 h2 {
-  font-size: 0.85em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #a1a1aa; /* Soft gray for category names */
-  margin-top: 4em;
-  position: relative;
-  top: 1.4em;
-  text-align: right;
-  width: 25%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: none;
 }
 
 h3 {
-  font-size: 0.95em;
-  font-weight: 600;
-  line-height: 2em;
-  position: relative;
-  top: 1.7em;
-  text-align: right;
-  width: 25%;
-  color: #18181b;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid #e4e4e7;
-  transition: all 0.2s ease;
+p, li {
+    font-family: 'Verdana', sans-serif; /* Sans-serif for body to match image */
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 8px;
 }
 
-a:hover {
-  color: #000;
-  border-bottom-color: #000;
+/* Special Color for Contact Header */
+.accent {
+    color: #c4a47c; /* Tan/Gold color from image */
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-#webaddress {
-  margin-top: 1em;
-  position: relative;
-  left: 33%;
-  color: #d4d4d8;
-  font-family: monospace;
-  font-size: 80%;
+/* --- Specific List Styles --- */
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-em {
-  font-weight: 600;
-  font-style: normal; /* "Zen" often avoids italics for a cleaner look */
-  color: #18181b;
+/* Styling for the Experience section dates */
+.date {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 2px;
 }
 
-strong {
-  font-weight: 700;
-  color: #000;
+/* Skill dots simulation */
+.skills li {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Specific styling for the skills section to keep it clean */
-#skills + ul li {
-  display: inline-block;
-  background: #fafafa;
-  border: 1px solid #f4f4f5;
-  padding: 0.2em 0.6em;
-  text-indent: 0;
-  margin-right: 0.5em;
-  border-radius: 4px;
-  font-size: 0.9em;
+/* --- Utility for MD --- */
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
 }
